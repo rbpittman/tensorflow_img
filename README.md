@@ -4,6 +4,9 @@ to the sandbox, then create a bootstrapped singularity image from the
 sandbox. This is useful for testing complicated build addons to
 Tensorflow when creating an image. 
 
+The tensorflow.def script will likely have errors, and should only be used
+with caution. 
+
 #1 Build Sandbox space from full tensorflow definition (corrected, of course)
 sudo singularity build --sandbox sandbox_horovod_no_nccl/ tensorflow.def
 
